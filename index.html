@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ASE 4712 Team 18 Project Website</title>
+    <title>Research Project | University Research</title>
 
     <style>
-        /* ---------- General Styles ---------- */
+        /* =========================================================
+           UNIVERSITY RESEARCH WEBSITE
+           Edit the colors, text, and sections to fit your project.
+           ========================================================= */
+
+        :root {
+            --navy: #17365d;
+            --dark-navy: #10253f;
+            --blue: #2f6f9f;
+            --light-blue: #eaf2f8;
+            --gold: #c9a227;
+            --dark-gray: #333333;
+            --medium-gray: #666666;
+            --light-gray: #f4f5f7;
+            --border: #d9dde3;
+            --white: #ffffff;
+        }
 
         * {
             box-sizing: border-box;
@@ -15,207 +31,333 @@
             padding: 0;
         }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f7fa;
+        html {
+            scroll-behavior: smooth;
         }
 
-        /* ---------- Header ---------- */
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            color: var(--dark-gray);
+            background-color: var(--light-gray);
+            line-height: 1.7;
+        }
+
+        /* =========================================================
+           TOP UNIVERSITY BAR
+           ========================================================= */
+
+        .university-bar {
+            background-color: var(--dark-navy);
+            color: white;
+            padding: 10px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .university-bar .container {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* =========================================================
+           HEADER
+           ========================================================= */
 
         header {
-            background-color: #1f3c5b;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border);
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+        .header-content {
+            max-width: 1180px;
+            margin: auto;
+            padding: 35px 20px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
         }
 
-        header p {
-            font-size: 1.1rem;
-            color: #dce6ef;
+        .university-logo {
+            width: 80px;
+            height: 80px;
+            border: 3px solid var(--navy);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--navy);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
 
-        /* ---------- Navigation ---------- */
+        .header-text h1 {
+            color: var(--navy);
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .header-text p {
+            color: var(--medium-gray);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+        }
+
+        /* =========================================================
+           NAVIGATION
+           ========================================================= */
 
         nav {
-            background-color: #142a3f;
-            text-align: center;
-            padding: 12px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background-color: var(--navy);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav-container {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            padding: 14px 18px;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
         }
 
         nav a:hover {
-            color: #8ecae6;
+            background-color: var(--blue);
         }
 
-        /* ---------- Main Content ---------- */
+        /* =========================================================
+           PAGE LAYOUT
+           ========================================================= */
+
+        .page-container {
+            max-width: 1180px;
+            margin: 35px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 35px;
+        }
 
         main {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
+            min-width: 0;
         }
 
-        section {
-            background-color: white;
-            padding: 30px;
+        /* =========================================================
+           SECTIONS
+           ========================================================= */
+
+        .section {
+            background-color: var(--white);
+            padding: 35px;
             margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border);
         }
 
-        section h2 {
-            color: #1f3c5b;
+        .section-title {
+            color: var(--navy);
+            font-size: 1.7rem;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 10px;
+            margin-bottom: 22px;
+        }
+
+        .section p {
+            margin-bottom: 16px;
+        }
+
+        /* =========================================================
+           INTRODUCTION
+           ========================================================= */
+
+        .intro {
+            border-top: 5px solid var(--navy);
+        }
+
+        .intro-lead {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* =========================================================
+           RESEARCH QUESTIONS
+           ========================================================= */
+
+        .question {
+            background-color: var(--light-blue);
+            border-left: 4px solid var(--blue);
+            padding: 18px 20px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #8ecae6;
-            padding-bottom: 8px;
         }
 
-        section p {
-            margin-bottom: 15px;
+        .question strong {
+            color: var(--navy);
         }
 
-        /* ---------- Lists ---------- */
+        /* =========================================================
+           RESEARCHER INFORMATION
+           ========================================================= */
 
-        ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        /* ---------- Research Question Box ---------- */
-
-        .research-question {
-            background-color: #eef6fa;
-            border-left: 5px solid #219ebc;
-            padding: 20px;
-            margin-top: 15px;
-            font-size: 1.1rem;
-        }
-
-        /* ---------- Results ---------- */
-
-        .results {
+        .researcher {
             display: flex;
             gap: 20px;
-            flex-wrap: wrap;
+            align-items: center;
         }
 
-        .result-card {
-            flex: 1;
-            min-width: 200px;
-            background-color: #f1f5f8;
-            padding: 20px;
-            border-radius: 6px;
+        .researcher-photo {
+            width: 90px;
+            height: 90px;
+            background-color: var(--light-blue);
+            border: 1px solid var(--border);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--blue);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            text-align: center;
         }
 
-        .result-card h3 {
-            color: #1f3c5b;
-            margin-bottom: 10px;
+        .researcher h3 {
+            color: var(--navy);
+            margin-bottom: 4px;
         }
 
-        /* ---------- Footer ---------- */
+        .researcher p {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+        }
 
-        footer {
-            background-color: #142a3f;
+        /* =========================================================
+           METHODS
+           ========================================================= */
+
+        .method-list {
+            list-style: none;
+        }
+
+        .method-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .method-list li:last-child {
+            border-bottom: none;
+        }
+
+        .method-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: var(--navy);
+            color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+        }
+
+        /* =========================================================
+           STATISTICS / KEY FINDINGS
+           ========================================================= */
+
+        .statistics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .stat {
+            background-color: var(--navy);
             color: white;
             text-align: center;
-            padding: 25px;
-            margin-top: 40px;
+            padding: 25px 10px;
         }
 
-        /* ---------- Mobile Styling ---------- */
-
-        @media (max-width: 600px) {
-
-            header h1 {
-                font-size: 2rem;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px 8px;
-            }
-
-            section {
-                padding: 20px;
-            }
-
-            .results {
-                flex-direction: column;
-            }
+        .stat-number {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
         }
-    </style>
-</head>
 
-<body>
+        .stat-label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            color: #dce6ef;
+        }
 
-    <!-- Header -->
-    <header>
-        <h1>Jet Engine Sound Suppressant System</h1>
-        <p>We will be researching the design of a system of suppressing the excess noise generated by jet engines on aircraft.</p>
-    </header>
+        /* =========================================================
+           FIGURE / DATA PLACEHOLDER
+           ========================================================= */
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#questions">Research Questions</a>
-        <a href="#methods">Methods</a>
-        <a href="#results">Results</a>
-        <a href="#conclusion">Conclusion</a>
-    </nav>
+        .figure {
+            margin: 25px 0;
+        }
 
-    <!-- Main Content -->
-    <main>
+        .figure-placeholder {
+            height: 280px;
+            background:
+                linear-gradient(135deg, #eef3f7, #dfe8ef);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--medium-gray);
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About the Research</h2>
+        .figure-caption {
+            font-size: 0.9rem;
+            color: var(--medium-gray);
+            margin-top: 8px;
+        }
 
-            <p>
-                This website presents information about a research project
-                examining the suppression of noise generated by jet engines.
-            </p>
+        /* =========================================================
+           REFERENCES
+           ========================================================= */
 
-            <p>
-                The purpose of this project is to better understand
-                why excess noise is generated and explore how
-                sound suppression systems can be designed, implemented, 
-                and if they adversely affect engine performance.
-            </p>
-        </section>
+        .references {
+            font-size: 0.95rem;
+        }
 
-        <!-- Research Questions -->
-        <section id="questions">
-            <h2>Research Questions</h2>
+        .reference {
+            padding-left: 30px;
+            text-indent: -30px;
+            margin-bottom: 14px;
+        }
 
-            <p>
-                This project focuses on the following research questions:
-            </p>
+        /* =========================================================
+           SIDEBAR
+           ========================================================= */
 
-            <div class="research-question">
-                <strong>Primary Research Question:</strong><br>
-                How does [INSERT FACTOR] affect [INSERT OUTCOME]?
-            </div>
+        aside {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-            <div class="research-question">
-                <strong>Secondary Research Question:</strong><br>
-                What factors contribute to [INSERT ISSUE OR OUT
+        .sidebar-box {
+            background-color: white;
+            border: 1px solid var(--border);
+            margin-bottom: 25px;
+        }
+
+        .sidebar-title

@@ -360,4 +360,583 @@
             margin-bottom: 25px;
         }
 
-        .sidebar-title
+        .sidebar-title {
+            background-color: var(--navy);
+            color: white;
+            padding: 12px 16px;
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+
+        .sidebar-content {
+            padding: 18px;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-content p {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-content a {
+            color: var(--blue);
+        }
+
+        .project-status {
+            display: inline-block;
+            background-color: #e7f4e8;
+            color: #27632a;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        /* =========================================================
+           BUTTONS
+           ========================================================= */
+
+        .button {
+            display: inline-block;
+            background-color: var(--navy);
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .button:hover {
+            background-color: var(--blue);
+        }
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        footer {
+            background-color: var(--dark-navy);
+            color: #dce6ef;
+            padding: 35px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .footer-content {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        footer h3 {
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        /* =========================================================
+           MOBILE RESPONSIVENESS
+           ========================================================= */
+
+        @media (max-width: 850px) {
+
+            .page-container {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                order: 2;
+            }
+
+            .statistics {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .university-bar .container {
+                flex-direction: column;
+                gap: 5px;
+                text-align: center;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-text h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                padding: 10px 8px;
+                font-size: 0.8rem;
+            }
+
+            .section {
+                padding: 22px;
+            }
+
+            .researcher {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         UNIVERSITY BAR
+         ========================================================= -->
+
+    <div class="university-bar">
+        <div class="container">
+            <span>Department of [Department Name]</span>
+            <span>[University Name]</span>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         HEADER
+         ========================================================= -->
+
+    <header>
+        <div class="header-content">
+
+            <div class="university-logo">
+                LOGO
+            </div>
+
+            <div class="header-text">
+                <h1>Research Project Title</h1>
+
+                <p>
+                    A study of [research topic] and its implications for
+                    [field, population, or area of study]
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- =========================================================
+         NAVIGATION
+         ========================================================= -->
+
+    <nav>
+        <div class="nav-container">
+            <a href="#overview">Overview</a>
+            <a href="#questions">Research Questions</a>
+            <a href="#methods">Methods</a>
+            <a href="#findings">Findings</a>
+            <a href="#conclusion">Conclusion</a>
+            <a href="#references">References</a>
+        </div>
+    </nav>
+
+    <!-- =========================================================
+         MAIN PAGE
+         ========================================================= -->
+
+    <div class="page-container">
+
+        <main>
+
+            <!-- Overview -->
+            <section class="section intro" id="overview">
+
+                <h2 class="section-title">Research Overview</h2>
+
+                <p class="intro-lead">
+                    This research project examines
+                    <strong>[INSERT MAIN RESEARCH TOPIC]</strong>
+                    in order to better understand
+                    [INSERT MAIN PURPOSE OF THE STUDY].
+                </p>
+
+                <p>
+                    The study explores the relationship between
+                    [VARIABLE / CONCEPT ONE] and
+                    [VARIABLE / CONCEPT TWO]. Understanding this
+                    relationship may provide insight into
+                    [BROADER PROBLEM OR SIGNIFICANCE].
+                </p>
+
+                <p>
+                    This website provides an overview of the research,
+                    including the research questions, methodology,
+                    findings, and relevant academic sources.
+                </p>
+
+            </section>
+
+            <!-- Researcher -->
+            <section class="section">
+
+                <h2 class="section-title">Researcher</h2>
+
+                <div class="researcher">
+
+                    <div class="researcher-photo">
+                        PHOTO
+                    </div>
+
+                    <div>
+                        <h3>Your Name</h3>
+
+                        <p>
+                            Student Researcher
+                        </p>
+
+                        <p>
+                            Department of [Department Name]<br>
+                            [University Name]
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Research Questions -->
+            <section class="section" id="questions">
+
+                <h2 class="section-title">Research Questions</h2>
+
+                <p>
+                    The study is guided by the following research questions:
+                </p>
+
+                <div class="question">
+                    <strong>Research Question 1:</strong><br>
+                    How does [FACTOR OR VARIABLE] affect
+                    [OUTCOME OR SUBJECT]?
+                </div>
+
+                <div class="question">
+                    <strong>Research Question 2:</strong><br>
+                    What factors contribute to
+                    [PHENOMENON OR OUTCOME]?
+                </div>
+
+                <div class="question">
+                    <strong>Research Question 3:</strong><br>
+                    What are the implications of these findings for
+                    [FIELD, COMMUNITY, OR POPULATION]?
+                </div>
+
+            </section>
+
+            <!-- Methods -->
+            <section class="section" id="methods">
+
+                <h2 class="section-title">Research Methods</h2>
+
+                <p>
+                    This study uses a [QUALITATIVE / QUANTITATIVE /
+                    MIXED-METHODS] research approach.
+                </p>
+
+                <ul class="method-list">
+
+                    <li>
+                        <span class="method-number">1</span>
+                        <strong>Literature Review</strong><br>
+                        Review of existing academic research relevant
+                        to the research topic.
+                    </li>
+
+                    <li>
+                        <span class="method-number">2</span>
+                        <strong>Data Collection</strong><br>
+                        Information was collected through
+                        [SURVEYS / INTERVIEWS / EXPERIMENTS /
+                        EXISTING DATA / OTHER].
+                    </li>
+
+                    <li>
+                        <span class="method-number">3</span>
+                        <strong>Data Analysis</strong><br>
+                        The collected information was analyzed using
+                        [STATISTICAL METHOD / CODING / THEMATIC ANALYSIS /
+                        OTHER].
+                    </li>
+
+                    <li>
+                        <span class="method-number">4</span>
+                        <strong>Interpretation</strong><br>
+                        Results were evaluated in relation to the
+                        existing academic literature.
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <!-- Findings -->
+            <section class="section" id="findings">
+
+                <h2 class="section-title">Key Findings</h2>
+
+                <p>
+                    The following summarizes the primary findings
+                    of the study.
+                </p>
+
+                <!-- Replace these numbers with your actual data -->
+
+                <div class="statistics">
+
+                    <div class="stat">
+                        <span class="stat-number">00%</span>
+                        <span class="stat-label">
+                            Example Finding
+                        </span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat-number">000</span>
+                        <span class="stat-label">
+                            Participants / Observations
+                        </span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat-number">00</span>
+                        <span class="stat-label">
+                            Variables Examined
+                        </span>
+                    </div>
+
+                </div>
+
+                <p>
+                    <strong>Finding 1.</strong>
+                    Describe your first major finding here. Explain
+                    what the data showed and why the finding is important.
+                </p>
+
+                <p>
+                    <strong>Finding 2.</strong>
+                    Describe your second major finding here and connect
+                    it to your research questions.
+                </p>
+
+                <!-- Figure -->
+                <div class="figure">
+
+                    <div class="figure-placeholder">
+                        <div>
+                            <strong>Research Figure / Chart</strong><br>
+                            Replace this area with your chart,
+                            graph, image, or visualization.
+                        </div>
+                    </div>
+
+                    <p class="figure-caption">
+                        Figure 1. Example placeholder for a research
+                        visualization. Add a descriptive caption and
+                        identify the data source.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- Conclusion -->
+            <section class="section" id="conclusion">
+
+                <h2 class="section-title">Conclusion</h2>
+
+                <p>
+                    The findings of this study suggest that
+                    [MAIN CONCLUSION].
+                </p>
+
+                <p>
+                    These results contribute to the broader discussion
+                    surrounding [RESEARCH AREA] by demonstrating
+                    [IMPORTANT CONTRIBUTION].
+                </p>
+
+                <p>
+                    Future research could investigate
+                    [FUTURE RESEARCH AREA], particularly by examining
+                    [SPECIFIC QUESTION OR LIMITATION].
+                </p>
+
+            </section>
+
+            <!-- References -->
+            <section class="section" id="references">
+
+                <h2 class="section-title">References</h2>
+
+                <div class="references">
+
+                    <p class="reference">
+                        Author, A. A. (Year). Title of academic article.
+                        <em>Journal Name, Volume</em>(Issue), pages.
+                    </p>
+
+                    <p class="reference">
+                        Author, B. B. (Year). <em>Title of Book</em>.
+                        Publisher.
+                    </p>
+
+                    <p class="reference">
+                        Organization Name. (Year).
+                        <em>Title of Report</em>.
+                    </p>
+
+                    <p class="reference">
+                        Author, C. C. (Year). Title of online source.
+                        Website or Institution.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- =====================================================
+             SIDEBAR
+             ===================================================== -->
+
+        <aside>
+
+            <!-- Project Information -->
+            <div class="sidebar-box">
+
+                <div class="sidebar-title">
+                    Project Information
+                </div>
+
+                <div class="sidebar-content">
+
+                    <p>
+                        <strong>Status:</strong><br>
+                        <span class="project-status">
+                            IN PROGRESS
+                        </span>
+                    </p>
+
+                    <p>
+                        <strong>Researcher:</strong><br>
+                        Your Name
+                    </p>
+
+                    <p>
+                        <strong>Institution:</strong><br>
+                        [University Name]
+                    </p>
+
+                    <p>
+                        <strong>Department:</strong><br>
+                        [Department Name]
+                    </p>
+
+                    <p>
+                        <strong>Year:</strong><br>
+                        2026
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="sidebar-box">
+
+                <div class="sidebar-title">
+                    Research Materials
+                </div>
+
+                <div class="sidebar-content">
+
+                    <p>
+                        <a href="#">Research Proposal</a>
+                    </p>
+
+                    <p>
+                        <a href="#">Download Dataset</a>
+                    </p>
+
+                    <p>
+                        <a href="#">Research Poster</a>
+                    </p>
+
+                    <p>
+                        <a href="#">Full Paper / Report</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="sidebar-box">
+
+                <div class="sidebar-title">
+                    Contact
+                </div>
+
+                <div class="sidebar-content">
+
+                    <p>
+                        Questions about this research can be directed
+                        to the researcher.
+                    </p>
+
+                    <a href="mailto:your.email@university.edu"
+                       class="button">
+                        Contact Researcher
+                    </a>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>[University Name]</h3>
+                <p>
+                    Department of [Department Name]
+                </p>
+            </div>
+
+            <div>
+                <h3>Research Project</h3>
+                <p>
+                    © 2026 Your Name. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
